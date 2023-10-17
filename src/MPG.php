@@ -124,7 +124,7 @@ class MPG
                 'TokenTerm' => $params['TokenTerm'] ?? null,                //付款人綁定資料 Varchar(20)  1.可對應付款人之資料，用於綁定付款人與 信用卡卡號時使用，例:會員編號、 Email。 2.限英、數字，「.」、「_」、「@」、「-」格 式。
                 'TokenTermDemand' => $params['TokenTermDemand'] ?? null,    //指定付款人信用卡快速結帳必填欄位 Int(1) 1 = 必填信用卡到期日與背面末三碼 2 = 必填信用卡到期日 3 = 必填背面末三碼
 
-                'CREDITAE' => $params['BARCODE'] ?? null,
+                'CREDITAE' => $params['CREDITAE'] ?? null,
                 'ALIPAY' => $params['ALIPAY'] ?? null,
                 'TENPAY' => $params['TENPAY'] ?? null,
 
