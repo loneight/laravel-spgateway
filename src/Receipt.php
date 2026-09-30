@@ -17,6 +17,7 @@ class Receipt
 
     public function __construct()
     {
+        // ezPay 官方端點路徑為 /Api/（非 /API/），勿改成全大寫
         if (config('app.env') === 'production') {
             $this->apiUrl['CREATE_RECEIPT_API']
                 = 'https://inv.ezpay.com.tw/Api/invoice_issue';
