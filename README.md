@@ -344,7 +344,7 @@ $receipt = Receipt::generate([
 傳送開立發票請求到智付通
 
 ##### 回傳
-詳見[智付通文件](https://inv.pay2go.com/dw_files/info_api/pay2go_gateway_electronic_invoice_api_V1_1_7.pdf)第四節之二：開立發票系統回應訊息
+詳見[智付通文件](https://inv.ezpay.com.tw/dw_files/info_api/EZP_INVI_1_2_1.pdf)第四節之二：開立發票系統回應訊息
 ```
 {
     "Status": "..."
@@ -382,7 +382,7 @@ $receipt = Receipt::generateTrigger('17122817285242624', '20171121WJNBX5NNBP', 1
 送出觸發開立電子發票請求到智付通
 
 ##### 回傳
-詳見[智付通文件](https://inv.pay2go.com/dw_files/info_api/pay2go_gateway_electronic_invoice_api_V1_1_7.pdf)第四節之四：觸發開立發票系統回應訊息
+詳見[智付通文件](https://inv.ezpay.com.tw/dw_files/info_api/EZP_INVI_1_2_1.pdf)第四節之四：觸發開立發票系統回應訊息
 ```
 {
     "Status": "..."
@@ -419,7 +419,7 @@ $receipt = Receipt::generateInvalid('17122817285242624', '作廢原因');
 送出觸發開立電子發票請求到智付通
 
 ##### 回傳
-詳見[智付通文件](https://inv.pay2go.com/dw_files/info_api/pay2go_gateway_electronic_invoice_api_V1_1_7.pdf)第五節之二：作廢發票系統回應訊息
+詳見[智付通文件](https://inv.ezpay.com.tw/dw_files/info_api/EZP_INVI_1_2_1.pdf)第五節之二：作廢發票系統回應訊息
 ```
 {
     "Status": "..."
@@ -443,7 +443,7 @@ $res = $receipt->sendInvalid();
 2. `amount (Integer)`: 發票金額
 
 ##### 回傳
-詳見[智付通文件](https://inv.pay2go.com/dw_files/info_api/pay2go_gateway_electronic_invoice_api_V1_1_7.pdf)第七節之二：查詢發票系統回應訊息
+詳見[智付通文件](https://inv.ezpay.com.tw/dw_files/info_api/EZP_INVI_1_2_1.pdf)第七節之二：查詢發票系統回應訊息
 ```
 {
     "Status": "..."
